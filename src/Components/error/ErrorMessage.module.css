@@ -1,0 +1,51 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+}
+
+.error-wrapper {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.error-header {
+    background-color: #4f005f;
+    padding: 1rem;
+}
+.error-header h2 {
+    margin: 0;
+    color: white;
+}
+
+.error-paragraph {
+    padding: 1rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+
+
+
+.errorBody {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 
+
+.show-hide {
+    display: none;
+} */

@@ -1,0 +1,16 @@
+.item-wrapper {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+}
+
+.item-wrapper ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+.item-wrapper li {
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}

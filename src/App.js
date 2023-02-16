@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, Fragment} from "react";
+
+import UserInput from "./Components/input/UserInput";
+import UserItem from "./Components/display/UserItem";
 
 function App() {
+
+  const [userList, setUserList] = useState([]);
+
+  const addUser = (dataLoad) => {
+    setUserList((prevState) => [...prevState, dataLoad]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <UserInput onAddUserHandler={addUser} />
+      <UserItem userData={userList} />
+    </Fragment>
   );
 }
 
